@@ -1,0 +1,1 @@
+\nconst express = require('express');\nconst app = express();\n\napp.get('/health', (req, res) => {\n  res.status(200).send('OK');\n});\n\napp.listen(3000, () => {\n  console.log('Server is running on port 3000');\n});
